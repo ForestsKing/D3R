@@ -2,7 +2,7 @@
 
 **Drift doesn't Matter: Dynamic Decomposition with Dffusion Reconstruction for Unstable Multivariate Time Series Anomaly Detection**
 
-Many unsupervised methods have recently been proposed for multivariate time series anomaly detection. However, existing works mainly focus on stable data yet often omit the drift generated from non-stationary environments, which may lead to numerous false alarms. We propose **D**ynamic **D**ecomposition with **D**iffusion **R**econstruction (D$^3$R), a novel anomaly detection network for real-world unstable data to fill the gap. D$^3$R tackles the drift via decomposition and reconstruction. In the decomposition procedure, we utilize data-time mix-attention to dynamically decompose long-period multivariate time series, overcoming the limitation of the local sliding window. The information bottleneck is critical yet difficult to determine in the reconstruction procedure. To avoid retraining once the bottleneck changes, we control it externally by noise diffusion and directly reconstruct the polluted data. The whole model can be trained end-to-end. Extensive experiments on various real-world datasets demonstrate that D$^3$R significantly outperforms existing methods, with a 11% average relative improvement over the previous SOTA models.
+Many unsupervised methods have recently been proposed for multivariate time series anomaly detection. However, existing works mainly focus on stable data yet often omit the drift generated from non-stationary environments, which may lead to numerous false alarms. We propose **D**ynamic **D**ecomposition with **D**iffusion **R**econstruction (D3R), a novel anomaly detection network for real-world unstable data to fill the gap. D3R tackles the drift via decomposition and reconstruction. In the decomposition procedure, we utilize data-time mix-attention to dynamically decompose long-period multivariate time series, overcoming the limitation of the local sliding window. The information bottleneck is critical yet difficult to determine in the reconstruction procedure. To avoid retraining once the bottleneck changes, we control it externally by noise diffusion and directly reconstruct the polluted data. The whole model can be trained end-to-end. Extensive experiments on various real-world datasets demonstrate that D3R significantly outperforms existing methods, with a 11% average relative improvement over the previous SOTA models.
 
 ![](./img/architecture.png)
 
@@ -28,7 +28,7 @@ Many unsupervised methods have recently been proposed for multivariate time seri
 
 ## Main Result
 
-We compare D$^3$R on three real-world datasets with 16 baselines and 1 adversary algorithm. Generally, D$^3$R achieves the best F1 performance, confirming its effectiveness and superiority.
+We compare D3R on three real-world datasets with 16 baselines and 1 adversary algorithm. Generally, D3R achieves the best F1 performance, confirming its effectiveness and superiority.
 
 ![](./img/result.png)
 
