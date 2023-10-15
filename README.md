@@ -40,7 +40,7 @@ If you find this repo or our work useful for your research, please consider citi
 @inproceedings{,
   author    = {Chengsen Wang and Zirui Zhuang and Qi Qi and Jingyu Wang and Xingyu Wang and Haifeng Sun and Jianxin Liao},
   title     = {Drift doesn't matter: Dynamic decomposition with diffusion reconstruction for unstable multivariate time series anomaly detection},
-  booktitle = {Conference on Neural Information Processing Systems},
+  booktitle = {Neural Information Processing Systems},
   year      = {2023},
 }
 ```
