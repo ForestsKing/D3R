@@ -24,10 +24,10 @@ def getStable(data, w=1440):
 
 def getData(path='./dataset/', dataset='SWaT', period=1440, train_rate=0.8):
     init_data = np.load(path + dataset + '/' + dataset + '_train_data.npy')
-    init_time = getTimeEmbedding(np.load(path + dataset + '/' + dataset + '_train_time.npy'))
+    init_time = getTimeEmbedding(np.load(path + dataset + '/' + dataset + '_train_date.npy'))
 
     test_data = np.load(path + dataset + '/' + dataset + '_test_data.npy')
-    test_time = getTimeEmbedding(np.load(path + dataset + '/' + dataset + '_test_time.npy'))
+    test_time = getTimeEmbedding(np.load(path + dataset + '/' + dataset + '_test_date.npy'))
     test_label = np.load(path + dataset + '/' + dataset + '_test_label.npy')
 
     scaler = StandardScaler()
