@@ -6,10 +6,10 @@ from model.diffusion import Diffusion
 from model.reconstruction import Reconstruction
 
 
-class DRDD(nn.Module):
+class DDDR(nn.Module):
     def __init__(self, time_steps, beta_start, beta_end, window_size, model_dim, ff_dim, atten_dim, feature_num,
                  time_num, block_num, head_num, dropout, device, d, t):
-        super(DRDD, self).__init__()
+        super(DDDR, self).__init__()
 
         self.device = device
         self.window_size = window_size

@@ -9,7 +9,7 @@ from tqdm import tqdm
 
 from data.dataset import Dataset
 from data.preprocess import getData
-from model.drdd import DRDD
+from model.dddr import DRDD
 from utils.earlystop import EarlyStop
 from utils.evaluate import evaluate
 
