@@ -47,8 +47,6 @@ If you find this repo or our work useful for your research, please consider citi
 }
 ```
 
-
-
 ## Contact
 
 If you have any question, please contact [cswang@bupt.edu.cn](cswang@bupt.edu.cn).
