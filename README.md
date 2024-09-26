@@ -2,6 +2,8 @@
 
 **Drift doesn't Matter: Dynamic Decomposition with Dffusion Reconstruction for Unstable Multivariate Time Series Anomaly Detection**
 
+<a href='https://proceedings.neurips.cc/paper_files/paper/2023/file/22f5d8e689d2a011cd8ead552ed59052-Paper-Conference.pdf'><img src='https://img.shields.io/badge/Paper-PDF-orange'></a> 
+
 Many unsupervised methods have recently been proposed for multivariate time series anomaly detection. However, existing works mainly focus on stable data yet often omit the drift generated from non-stationary environments, which may lead to numerous false alarms. We propose **D**ynamic **D**ecomposition with **D**iffusion **R**econstruction (D3R), a novel anomaly detection network for real-world unstable data to fill the gap. D3R tackles the drift via decomposition and reconstruction. In the decomposition procedure, we utilize data-time mix-attention to dynamically decompose long-period multivariate time series, overcoming the limitation of the local sliding window. The information bottleneck is critical yet difficult to determine in the reconstruction procedure. To avoid retraining once the bottleneck changes, we control it externally by noise diffusion and directly reconstruct the polluted data. The whole model can be trained end-to-end. Extensive experiments on various real-world datasets demonstrate that D3R significantly outperforms existing methods, with a 11% average relative improvement over the previous SOTA models.
 
 ![](./img/architecture.png)
@@ -37,10 +39,10 @@ We compare D3R on three real-world datasets with 16 baselines and 1 adversary al
 If you find this repo or our work useful for your research, please consider citing the paper:
 
 ```tex
-@inproceedings{,
+@inproceedings{
   author    = {Chengsen Wang and Zirui Zhuang and Qi Qi and Jingyu Wang and Xingyu Wang and Haifeng Sun and Jianxin Liao},
   title     = {Drift doesn't matter: Dynamic decomposition with diffusion reconstruction for unstable multivariate time series anomaly detection},
-  booktitle = {Neural Information Processing Systems},
+  booktitle = {Thirty-seventh Conference on Neural Information Processing Systems},
   year      = {2023},
 }
 ```
