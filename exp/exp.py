@@ -9,7 +9,7 @@ from tqdm import tqdm
 
 from data.dataset import Dataset
 from data.preprocess import getData
-from model.dddr import DRDD
+from model.dddr import DDDR
 from utils.earlystop import EarlyStop
 from utils.evaluate import evaluate
 
@@ -75,7 +75,7 @@ class Exp:
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         print('\ndevice:', self.device)
 
-        self.model = DRDD(
+        self.model = DDDR(
             time_steps=self.time_steps,
             beta_start=self.beta_start,
             beta_end=self.beta_end,
