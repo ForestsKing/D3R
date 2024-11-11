@@ -2,7 +2,7 @@
    
 # D3R
 
-<a href='https://proceedings.neurips.cc/paper_files/paper/2023/file/22f5d8e689d2a011cd8ead552ed59052-Paper-Conference.pdf'><img src='https://img.shields.io/badge/Paper-PDF-orange'></a> 
+<a href='https://proceedings.neurips.cc/paper_files/paper/2023/hash/22f5d8e689d2a011cd8ead552ed59052-Abstract-Conference.html'><img src='https://img.shields.io/badge/Paper-PDF-orange'></a> 
 
 </div>
 
