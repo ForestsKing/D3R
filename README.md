@@ -1,6 +1,6 @@
 <div align="center">
    
-# D3R
+# D3R: Dynamic Decomposition with Dffusion Reconstruction
 
 <a href='https://proceedings.neurips.cc/paper_files/paper/2023/hash/22f5d8e689d2a011cd8ead552ed59052-Abstract-Conference.html'><img src='https://img.shields.io/badge/Paper-PDF-orange'></a> 
 ![Visits Badge](https://badges.pufler.dev/visits/ForestsKing/D3R)
