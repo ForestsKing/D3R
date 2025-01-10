@@ -17,7 +17,13 @@ Many unsupervised methods have recently been proposed for multivariate time seri
 
 ## 	Get Started
 
-1. Install Python 3.9.13, PyTorch 1.11.0.
+1. Install the environment:
+```bash
+conda create -n d3r python=3.9.13
+conda activate d3r
+pip install torch==1.11.0
+pip install -r requirements.txt
+```
 
 2. Download data. You can obtain two benchmarks from [Google Cloud](https://drive.google.com/drive/folders/1UJ6SGfb6h-9R0L18FLDXpISKh1nhaqWA?usp=sharing). The datasets are well pre-processed. For the SWaT dataset, you can apply for it by following its [official tutorial](https://itrust.sutd.edu.sg/itrust-labs_datasets/dataset_info/). We unify the SWaT dataset to minute granularity and retain only continuous metrics:
 
