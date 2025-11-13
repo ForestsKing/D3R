@@ -22,6 +22,19 @@ pip install torch==1.11.0
 pip install -r requirements.txt
 ```
 
+- If you prefer Docker (requires Docker Engine and NVIDIA Container Toolkit):
+```bash
+# 1. Build the image (run from the directory containing the Dockerfile)
+docker build -t d3r .
+
+# 2. Run the experiment
+#    (Ensure your downloaded datasets are in this directory for the mount to work)
+docker run --rm -it --gpus all \
+    -v .:/app/data \
+    d3r \
+    /bin/bash
+```
+
 2. Download data. You can obtain two benchmarks from [Google Cloud](https://drive.google.com/drive/folders/1UJ6SGfb6h-9R0L18FLDXpISKh1nhaqWA?usp=sharing). The datasets are well pre-processed. For the SWaT dataset, you can apply for it by following its [official tutorial](https://itrust.sutd.edu.sg/itrust-labs_datasets/dataset_info/). We unify the SWaT dataset to minute granularity and retain only continuous metrics:
 
    ```
